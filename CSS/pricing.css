@@ -1,0 +1,153 @@
+.pricing-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-bottom: 120px;
+}
+
+.pricing-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.pricing-title h4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31.47px;
+}
+
+.pricing-title p {
+    font-size: 16px;
+    line-height: 19.36px;
+    font-weight: 500;
+    color: #677788;
+}
+
+.pricing-cards-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 0 44px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 370px;
+    height: 454px;
+    border: 1px solid white;
+    padding: 40px;
+    gap: 50px;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
+}
+
+.pricing-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cost {
+    display: flex;
+    align-items: baseline;
+    align-self: flex-start;
+    text-align: center;
+    gap: 7px;
+}
+
+.fifty-nine {
+    font-size: 50px;
+}
+
+.month {
+    font-size: 20px;
+    color: #677788;
+}
+
+.card-line {
+    height: 1px;
+    background: #8D8D8D;
+    width: 100%;
+}
+
+.price-details {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #677788;
+}
+
+.no-credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    gap: 10px;
+}
+
+.no-credit-text {
+    font-size: 12px;
+    color: #677788;
+}
+
+.pricing-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.tiles {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tiles h3 {
+    font-size: 16px;
+    gap: 10px;
+}
+
+.tiles p {
+    font-size: 14px;
+    font-weight: 400px;
+    list-style: 22px;
+    color: #677788;
+}
+
+@media (max-width: 1023px) {
+    .pricing-wrapper {
+        padding-bottom: 60px;
+    }
+
+    .pricing-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        justify-content: center;
+    }
+
+
+    .cost,
+    .no-credit,
+    .tiles {
+        align-self: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing-tiles {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .pricing-cards-wrapper {
+        padding: 0;
+    }
+}

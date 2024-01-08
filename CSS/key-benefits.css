@@ -1,0 +1,101 @@
+.key-benefits {
+    gap: 60px;
+    padding-bottom: 80px;
+}
+
+.benefits-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefits-info h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31.47px;
+}
+
+.benefits-info p {
+    text-align: center;
+    line-height: 24px;
+    color: #677788;
+    font-size: 16px;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.benefits-list p{
+    color: #677788;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: top ease 0.5s;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
+}
+
+.benefits:hover {
+    top: -10px;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+}
+
+.prem-sketch{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sketch {
+    border-radius: 15px;
+    padding: 4px 10px;
+    background-color: #01C9A7;
+    color: white;
+    font-size: 12px;
+}
+
+@media (max-width: 1023px) {
+    .benefits-list{
+        flex-wrap: wrap;
+    }
+    
+    .benefits {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 767px) {
+    .key-benefits {
+        gap: 40px;
+        padding: 40px 0;
+    }
+
+    .benefits-info {
+        padding: 0 16px 0 16px;
+    }
+
+    .benefits-list {
+        padding: 10px 16px 10px 16px;
+        gap: 30px;
+    }
+
+    .benefits{
+        width: 100%;
+    }
+}

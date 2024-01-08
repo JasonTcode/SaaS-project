@@ -1,0 +1,258 @@
+.hire-us-wrapper {
+    background-color: #20335B;
+    display: flex;
+    height: 708px;
+}
+
+.hire-us-description,
+.form-wrapper {
+    width: 50%;
+}
+
+.hire-us-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px;
+    gap: 60px;
+}
+
+.hire-us-info,
+.hire-us-title {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hire-us-title {
+    width: 180px;
+}
+
+.hire-us-info h4 {
+    color: white;
+    font-size: 26px;
+}
+
+.hire-us-title p{
+color: #677788;
+}
+
+.hire-us-line {
+    height: 1px;
+    background: white;
+    width: 100%;
+}
+
+.quote {
+    font-size: 16px;
+    color: white;
+}
+
+.headshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.job-title-wrapper p{
+    font-size: 18px;
+    color: white;
+}
+
+.job-title-wrapper .job-title {
+    font-size: 14px;
+    color: #677788;
+}
+
+.headshots {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.headshot-one,
+.headshot-two {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.headshot-three {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    gap: 37px;
+    border-radius: 10px;
+    width: 454.5px;
+    height: 648px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 392px;
+    height: 506px;
+}
+
+.form-content h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.form-data{
+    display: flex;
+    gap: 20px;
+}
+
+.form-data input,
+ select, 
+ textarea {
+    border: 1px solid #e6e8f2;
+    border-radius: 5px;
+    gap: 10px;
+    width: 392px;
+}
+
+.form-data input,
+textarea {
+    color: #828282;
+    padding: 10px;
+}
+
+.form-data select {
+    padding: 10px 16px 10px 10px;
+}
+
+.policy-wrapper {
+    display: flex;
+    border-radius: 5px;
+    gap: 16px;
+    color: #828282;
+    width: 392px;
+}
+
+.checkbox input {
+    color:  #e6e8f2;
+}
+
+.policy-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.policy-info p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 510;
+}
+
+.policy-view {
+    display: flex;
+    gap: 28px;
+    color: #677788;
+}
+
+.policy-view p {
+    border-bottom: 1px dashed;
+}
+
+.policy-view-blue {
+color: #2476FF;
+}
+
+@media (max-width: 1023px) {
+    .hire-us-wrapper {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .hire-us-description,
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .hire-us-description{
+    flex-direction: row;
+    padding: 40px 30px 20px 30px;
+    }
+
+    .hire-us-title {
+        width: auto;
+    }
+
+    .headshot-wrapper {
+      gap: 30px;
+    }
+
+    .job-title-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .form-container {
+        padding: 30px;
+        gap: 10px;
+    }
+    
+    .form-wrapper {
+        height: auto;
+    }
+
+    .form-content, 
+    .form-data,
+    .policy-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .hire-us-description{
+        flex-direction: column;
+        padding: 40px 16px 20px 16px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .form-container{
+    align-items: center;
+    justify-content: center;
+   }
+
+   .form-content {
+    height: auto;
+   }
+
+   .form-data {
+    flex-direction: column;
+   }
+
+   .form-data input,
+    select, 
+    textarea {
+        width: auto;
+    }
+
+    .policy-view-blue{
+        display: none;
+    }
+}

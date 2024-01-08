@@ -1,0 +1,115 @@
+.hubspot {
+    gap: 60px;
+    min-height: 560px;
+}
+
+.hubspot-wrapper {
+    display: flex;
+}
+
+.hubspot-info-wrapper {
+    width: 50%;
+}
+
+.hubspot-photo-wrapper {
+    width: 50%;
+}
+
+.hubspot-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.dots-wrapper img {
+    position: absolute;
+    top: 111px;
+    left: 28px;
+    width: 200px;
+    height: 369.28px;
+}
+
+.woman-three-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 81px;
+    width: 371px;
+    height: 425px;
+}
+
+.hubspot-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    gap: 50px;
+}
+
+.hubspot-description img {
+    width: 100px;
+}
+
+.hubspot-description  p{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.name-title  .name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+}
+
+.name-title .job-title {
+    color: #677788;
+    font-size: 14px;
+    line-height: 16.94px;
+ }
+
+@media (max-width: 1023px) {
+    .hubspot-wrapper{
+        flex-direction: column;
+    }
+
+    .hubspot-description {
+        max-width: 550px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        gap: 50px;
+        padding-top: 0;
+       
+    }
+}
+
+@media (max-width: 767px) {
+    .photos-container {
+        width: 360px;
+        height: 382px;
+    }
+
+    .dots-wrapper img {
+        top: 78px;
+        left: 28px;
+        width: 141px;
+        height: 261px;
+    }
+    
+    .woman-three-wrapper img {
+        left: 65px;
+        width: 262px;
+        height: 300px;
+    }
+
+    .hubspot-description {
+        padding: 0;
+    }
+}

@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    color: #677788;
+    gap: 20px;
+}
+
+.navbar li a {
+    color: #677788;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.navbar li a:hover {
+    color: #2476FF;
+}
+
+.navbar .blue-font {
+    color: #2476FF;
+}
+
+.navbar .blue-btn:hover {
+    background-color: white;
+    border: 1px solid #2476FF;
+    color: #2476FF;
+}
+
+.navbar .blue-btn {
+    color: white;
+}
+
+ .blue-btn {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    gap: 8px;
+    background-color: #2476FF;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+}
+
+.blue-btn-mobile-on {
+    display: none;
+}
+
+.trigram{
+    appearance: none;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #677788;
+    display: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.header-underline {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .trigram {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ .navbar {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ .navbar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        border-top: 1px solid #E7E7E7;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 60px 14px;
+        gap: 73px;
+        z-index: 10;
+    }
+
+    [aria-expanded="true"] ~ .navbar li a {
+        font-size: 18px;
+        line-height: 21.78px;
+    }
+}
+
+@media (max-width: 767px) {
+    [aria-expanded="true"] ~ .navbar ul{
+        flex-direction: column;
+        gap: 40px;
+        font-size: 26px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
